@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blessed Laboratory Services & Supply | Accurate. Reliable. Trusted.</title>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Canvas for Floating Particle Effect -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Multi-layer Parallax Floating Tech Icons -->
+    <div class="parallax-layer" data-speed="0.05">
+        <i class="fa-solid fa-microscope floating-icon icon-1"></i>
+        <i class="fa-solid fa-dna floating-icon icon-2"></i>
+        <i class="fa-solid fa-flask floating-icon icon-3"></i>
+    </div>
+    <div class="parallax-layer" data-speed="0.12">
+        <i class="fa-solid fa-atom floating-icon icon-4"></i>
+        <i class="fa-solid fa-vial floating-icon icon-5"></i>
+        <i class="fa-solid fa-pills floating-icon icon-6"></i>
+    </div>
+
+    <!-- Navigation Header -->
+    <header id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">
+                <div class="brand-logo-icon">
+                    <i class="fa-solid fa-flask-vial"></i>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-title">BLESSED</span>
+                    <span class="brand-sub">LABORATORY & SUPPLY</span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                    <li><a href="#why-us" class="nav-link"><i class="fa-solid fa-shield-halved"></i> Why Us</a></li>
+                    <li><a href="#services" class="nav-link"><i class="fa-solid fa-stethoscope"></i> Services</a></li>
+                    <li><a href="#supplies" class="nav-link"><i class="fa-solid fa-boxes-packing"></i> Supplies</a></li>
+                    <li><a href="#gallery" class="nav-link"><i class="fa-solid fa-images"></i> Gallery</a></li>
+                    <li><a href="#testimonials" class="nav-link"><i class="fa-solid fa-comments"></i> Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link nav-btn"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content" data-speed="0.08">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-circle-check"></i> Advanced Medical & Clinical Diagnostic Solutions
+                </div>
+                <h1 class="hero-title">
+                    Blessed Laboratory <br>
+                    <span class="gradient-text">Services & Supply</span>
+                </h1>
+                <p class="hero-tagline">Accurate. Reliable. Trusted.</p>
+                <p class="hero-description">
+                    Empowering healthcare providers, clinical institutions, and research laboratories with high-precision diagnostic testing, cutting-edge laboratory instruments, and certified medical consumables.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Request Quote</a>
+                    <a href="#services" class="btn btn-outline"><i class="fa-solid fa-microscope"></i> Our Services</a>
+                </div>
+            </div>
+            <div class="hero-visual" id="hero-visual">
+                <div class="glass-card hero-card">
+                    <div class="hero-card-glow"></div>
+                    <div class="hero-card-icon">
+                        <i class="fa-solid fa-vials"></i>
+                    </div>
+                    <h3>Precision Diagnostics</h3>
+                    <p>Clinical Pathology & Molecular Science</p>
+                    <div class="hero-stats-mini">
+                        <div><span class="mini-val">99.9%</span><span class="mini-lbl">Accuracy</span></div>
+                        <div><span class="mini-val">24/7</span><span class="mini-lbl">Turnaround</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#031B3D"></path>
+        </svg>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Who We Are</span>
+                <h2 class="section-title">Pioneering Next-Gen Diagnostics & Supply</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="glass-panel image-card">
+                        <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1000&q=80" alt="Advanced Laboratory Equipment" class="zoom-img">
+                        <div class="experience-badge glass-card">
+                            <span class="exp-num">10+</span>
+                            <span class="exp-text">Years of Clinical Excellence</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <p class="lead-text">
+                        <strong>Blessed Laboratory Services & Supply</strong> is a premier healthcare institution and direct laboratory equipment supplier headquartered in Siaya, Kenya. Led by experienced Laboratory Technologist & Director <strong>Wanga Caroline</strong>, we bridge the gap between complex diagnostic technology and accessible patient care.
+                    </p>
+
+                    <div class="mv-grid">
+                        <div class="glass-card mv-box">
+                            <div class="mv-icon"><i class="fa-solid fa-bullseye"></i></div>
+                            <h4>Our Mission</h4>
+                            <p>To deliver flawless, swift diagnostic intelligence and supply premium-grade medical equipment that elevate clinical standards across Africa.</p>
+                        </div>
+                        <div class="glass-card mv-box">
+                            <div class="mv-icon"><i class="fa-solid fa-eye"></i></div>
+                            <h4>Our Vision</h4>
+                            <p>To be the most trusted and technologically advanced laboratory partner and equipment distributor in East Africa.</p>
+                        </div>
+                    </div>
+
+                    <div class="features-checklist">
+                        <h4>Core Value Commitment</h4>
+                        <ul class="checklist-items">
+                            <li><i class="fa-solid fa-circle-check"></i> Reliable Diagnostics with ISO-Compliant Standards</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Quality Laboratory Equipment & Calibrated Devices</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Affordable Medical Supplies & Direct Wholesale Pricing</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Professional Customer Support & Technical Maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="why-section reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Excellence Guaranteed</span>
+                <h2 class="section-title">Why Partner With Blessed Laboratory?</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="why-grid">
+                <div class="glass-card why-card">
+                    <div class="why-icon-wrap">
+                        <i class="fa-solid fa-laptop-medical"></i>
+                    </div>
+                    <h3>Modern Equipment</h3>
+                    <p>We source and utilize state-of-the-art analyzers, centrifuges, and automated diagnostic suites for unparalleled accuracy.</p>
+                </div>
+
+                <div class="glass-card why-card">
+                    <div class="why-icon-wrap">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3>Trusted Quality</h3>
+                    <p>Strict quality assurance protocols, standardized reagents, and rigorous internal quality control checks on every sample.</p>
+                </div>
+
+                <div class="glass-card why-card">
+                    <div class="why-icon-wrap">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3>Professional Team</h3>
+                    <p>Guided by Director Wanga Caroline and certified medical laboratory scientists dedicated to ethical healthcare services.</p>
+                </div>
+
+                <div class="glass-card why-card">
+                    <div class="why-icon-wrap">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Rapid dispatch system for clinical reports and swift delivery of laboratory consumables to hospitals and clinics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Comprehensive Healthcare</span>
+                <h2 class="section-title">Our Professional Services</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="services-grid">
+                <div class="glass-card service-card">
+                    <div class="service-icon"><i class="fa-solid fa-vial-virus"></i></div>
+                    <h3>Laboratory Testing</h3>
+                    <p>Full spectrum hematology, biochemistry, microbiology, parasitology, and endocrinology diagnostic testing with rapid digital reporting.</p>
+                </div>
+
+                <div class="glass-card service-card">
+                    <div class="service-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+                    <h3>Medical Laboratory Supplies</h3>
+                    <p>Direct supply of high-grade reagents, specimen collection tubes, rapid diagnostic tests, and clinical laboratory consumables.</p>
+                </div>
+
+                <div class="glass-card service-card">
+                    <div class="service-icon"><i class="fa-solid fa-microscope"></i></div>
+                    <h3>Scientific Equipment</h3>
+                    <p>Sales, installation, and setup of microscopes, spectrophotometers, incubators, centrifuges, and clinical analyzers.</p>
+                </div>
+
+                <div class="glass-card service-card">
+                    <div class="service-icon"><i class="fa-solid fa-pump-soap"></i></div>
+                    <h3>Medical Consumables</h3>
+                    <p>Provision of certified surgical gloves, protective PPE, disinfectant solutions, evacuated blood tubes, and sterile pipettes.</p>
+                </div>
+
+                <div class="glass-card service-card">
+                    <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Research Support</h3>
+                    <p>Specialized testing services, custom sample preparation, and data analytics support for academic and clinical research projects.</p>
+                </div>
+
+                <div class="glass-card service-card">
+                    <div class="service-icon"><i class="fa-solid fa-user-gear"></i></div>
+                    <h3>Laboratory Consultation</h3>
+                    <p>Expert advisory services for setting up new clinical laboratories, ISO accreditation prep, and equipment calibration auditing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Laboratory Supplies Section -->
+    <section id="supplies" class="supplies-section reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Product Catalog</span>
+                <h2 class="section-title">Laboratory Supplies & Equipment</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="supplies-tabs">
+                <button class="tab-btn active" data-tab="equipment"><i class="fa-solid fa-gears"></i> Equipment</button>
+                <button class="tab-btn" data-tab="glassware"><i class="fa-solid fa-flask"></i> Glassware</button>
+                <button class="tab-btn" data-tab="kits"><i class="fa-solid fa-vial-circle-check"></i> Diagnostic Kits</button>
+                <button class="tab-btn" data-tab="safety"><i class="fa-solid fa-user-shield"></i> Safety & Chemicals</button>
+            </div>
+
+            <div class="tab-content active" id="tab-equipment">
+                <div class="product-grid">
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Instrument</div>
+                        <div class="product-icon"><i class="fa-solid fa-arrows-spin"></i></div>
+                        <h4>Laboratory Centrifuges</h4>
+                        <p>High-speed micro and clinical centrifuges with precise digital timer and speed controls.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Sterilization</div>
+                        <div class="product-icon"><i class="fa-solid fa-temperature-arrow-up"></i></div>
+                        <h4>Autoclaves</h4>
+                        <p>Vertical and benchtop steam sterilizers for medical instruments and culture media.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Mixer</div>
+                        <div class="product-icon"><i class="fa-solid fa-shuffle"></i></div>
+                        <h4>Blood Mixers & Rotators</h4>
+                        <p>3D tube rotators ensuring consistent mixing for CBC and coagulation testing.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Heating</div>
+                        <div class="product-icon"><i class="fa-solid fa-magnet"></i></div>
+                        <h4>Magnetic Stirrers</h4>
+                        <p>Digital hotplate magnetic stirrers with precise temperature regulation.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Burner</div>
+                        <div class="product-icon"><i class="fa-solid fa-fire"></i></div>
+                        <h4>Bunsen Burners</h4>
+                        <p>Heavy-base gas burners designed for flame sterilization in microbiology labs.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Timer</div>
+                        <div class="product-icon"><i class="fa-solid fa-stopwatch"></i></div>
+                        <h4>Digital Timers</h4>
+                        <p>Multi-channel laboratory countdown/count-up timers with high-decibel alarms.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-glassware">
+                <div class="product-grid">
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Glassware</div>
+                        <div class="product-icon"><i class="fa-solid fa-glass-water"></i></div>
+                        <h4>Borosilicate Beakers</h4>
+                        <p>Graduated pyrex-type glass beakers, heat-resistant from 50ml to 2000ml.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Glassware</div>
+                        <div class="product-icon"><i class="fa-solid fa-flask"></i></div>
+                        <h4>Conical Flasks</h4>
+                        <p>Erlenmeyer flasks designed for culture storage and titrations.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Glassware</div>
+                        <div class="product-icon"><i class="fa-solid fa-eye-dropper"></i></div>
+                        <h4>Precision Burettes</h4>
+                        <p>Straight bore burettes with PTFE stopcocks for accurate volumetric titrations.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Storage</div>
+                        <div class="product-icon"><i class="fa-solid fa-border-all"></i></div>
+                        <h4>Test Tube Racks</h4>
+                        <p>Autoclavable polypropylene and stainless steel test tube organizing stands.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Support</div>
+                        <div class="product-icon"><i class="fa-solid fa-mountain"></i></div>
+                        <h4>Tripod Stands & Gauze</h4>
+                        <p>Heavy duty iron tripod stands with ceramic wire gauze for laboratory heating.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Containers</div>
+                        <div class="product-icon"><i class="fa-solid fa-box-archive"></i></div>
+                        <h4>Sterile Sample Containers</h4>
+                        <p>Leak-proof urine, stool, and sputum specimen collection cups (30ml - 100ml).</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-kits">
+                <div class="product-grid">
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Rapid Test</div>
+                        <div class="product-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+                        <h4>HIV Test Kits (1/2)</h4>
+                        <p>WHO-prequalified rapid screening test strips with ultra-high sensitivity.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Rapid Test</div>
+                        <div class="product-icon"><i class="fa-solid fa-mosquito"></i></div>
+                        <h4>Malaria Pf/Pv RDT Kits</h4>
+                        <p>Rapid antigen cassettes for differential diagnosis of Plasmodium species.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Consumable</div>
+                        <div class="product-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <h4>Microscope Slides & Coverslips</h4>
+                        <p>Pre-cleaned frosted glass slides and ground edge coverslips for microscopy.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Blood Tube</div>
+                        <div class="product-icon"><i class="fa-solid fa-vial"></i></div>
+                        <h4>EDTA & Vacuum Blood Tubes</h4>
+                        <p>K2/K3 EDTA lavender top tubes, serum clot activator, and sodium citrate tubes.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">PPE</div>
+                        <div class="product-icon"><i class="fa-solid fa-hand-holding-medical"></i></div>
+                        <h4>Latex & Nitrile Gloves</h4>
+                        <p>Powder-free medical examination gloves offering superior tactile feedback.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Reagent</div>
+                        <div class="product-icon"><i class="fa-solid fa-bottle-water"></i></div>
+                        <h4>Distilled & Deionized Water</h4>
+                        <p>High-purity grade laboratory water for reagent preparation and rinsing.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab-safety">
+                <div class="product-grid">
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Apparel</div>
+                        <div class="product-icon"><i class="fa-solid fa-user-nurse"></i></div>
+                        <h4>Laboratory Coats</h4>
+                        <p>White lab coats with liquid-repellent technology and secure press studs.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Surgical</div>
+                        <div class="product-icon"><i class="fa-solid fa-scalpel"></i></div>
+                        <h4>Surgical Blades & Handles</h4>
+                        <p>Sterile carbon steel surgical blades (#10, #11, #15, #22) with ergonomic handles.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Chemical</div>
+                        <div class="product-icon"><i class="fa-solid fa-flask-vial"></i></div>
+                        <h4>Sodium Hydroxide (NaOH)</h4>
+                        <p>Analytical grade pellets and solutions for laboratory titrations.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Safety</div>
+                        <div class="product-icon"><i class="fa-solid fa-glasses"></i></div>
+                        <h4>Protective Goggles & Shields</h4>
+                        <p>Anti-fog, chemical splash protective eyewear and full face shields.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Chemical</div>
+                        <div class="product-icon"><i class="fa-solid fa-skull-crossbones"></i></div>
+                        <h4>Laboratory Stains & Solvents</h4>
+                        <p>Giemsa stain, Leishman stain, Gram stain kits, ethanol, and methanol reagents.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                    <div class="glass-card product-card">
+                        <div class="product-badge">Disposal</div>
+                        <div class="product-icon"><i class="fa-solid fa-trash-can-arrow-up"></i></div>
+                        <h4>Sharps Boxes & Biohazard Bags</h4>
+                        <p>Puncture-resistant medical waste safety containers and yellow biohazard bags.</p>
+                        <a href="#contact" class="product-btn"><i class="fa-solid fa-cart-plus"></i> Inquire Price</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Counter Section -->
+    <section class="stats-section reveal">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="glass-card stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="counter" data-target="5000">0</div>
+                    <span class="plus">+</span>
+                    <p class="stat-label">Happy Clients Serviced</p>
+                </div>
+                <div class="glass-card stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-hospital"></i></div>
+                    <div class="counter" data-target="150">0</div>
+                    <span class="plus">+</span>
+                    <p class="stat-label">Healthcare Partners</p>
+                </div>
+                <div class="glass-card stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <div class="counter" data-target="99">0</div>
+                    <span class="plus">%</span>
+                    <p class="stat-label">Diagnostic Accuracy</p>
+                </div>
+                <div class="glass-card stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
+                    <div class="counter" data-target="24">0</div>
+                    <span class="plus">/7</span>
+                    <p class="stat-label">Emergency Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Visual Tour</span>
+                <h2 class="section-title">Our Facility & Equipment</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80" data-caption="High-Precision Clinical Microscopy">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="Microscope" class="zoom-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-expand"></i>
+                        <span>Clinical Microscopy</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1000&q=80" data-caption="Modern Automated Analyzer Workstation">
+                    <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=600&q=80" alt="Analyzer" class="zoom-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-expand"></i>
+                        <span>Automated Diagnostic Suite</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1000&q=80" data-caption="Sterile Sample Preparation & Chemistry Analysis">
+                    <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=600&q=80" alt="Sample Preparation" class="zoom-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-expand"></i>
+                        <span>Sample Preparation</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-src="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?auto=format&fit=crop&w=1000&q=80" data-caption="Medical Reagent & Glassware Inventory">
+                    <img src="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?auto=format&fit=crop&w=600&q=80" alt="Reagents" class="zoom-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-expand"></i>
+                        <span>Laboratory Inventory</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-src="https://images.unsplash.com/photo-1581093458791-9f3c3250a8b0?auto=format&fit=crop&w=1000&q=80" data-caption="Molecular Diagnostics Research Suite">
+                    <img src="https://images.unsplash.com/photo-1581093458791-9f3c3250a8b0?auto=format&fit=crop&w=600&q=80" alt="Molecular Lab" class="zoom-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-expand"></i>
+                        <span>Molecular Testing</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-src="https://images.unsplash.com/photo-1579165466741-7f35e4755660?auto=format&fit=crop&w=1000&q=80" data-caption="Professional Technologists at Work">
+                    <img src="https://images.unsplash.com/photo-1579165466741-7f35e4755660?auto=format&fit=crop&w=600&q=80" alt="Technologists" class="zoom-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-expand"></i>
+                        <span>Expert Technologists</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged view">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Client Endorsements</span>
+                <h2 class="section-title">What Healthcare Leaders Say</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="testimonial-slider-container">
+                <div class="testimonial-slider" id="testimonial-slider">
+                    
+                    <div class="testimonial-slide active">
+                        <div class="glass-card testimonial-card">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="testimonial-text">
+                                "Blessed Laboratory Services & Supply has transformed our hospital's diagnostic turnaround times. Their equipment calibration and supply delivery are remarkably consistent and top-tier."
+                            </p>
+                            <div class="client-info">
+                                <div class="client-avatar"><i class="fa-solid fa-user-md"></i></div>
+                                <div>
+                                    <h4 class="client-name">Dr. Emmanuel Ochieng</h4>
+                                    <span class="client-role">Chief Medical Officer, Siaya County Health Network</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="glass-card testimonial-card">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="testimonial-text">
+                                "Wanga Caroline and her technical team provide exemplary service. When we ordered centrifuges and rapid diagnostic kits for our clinic, delivery was seamless and the products were 100% authentic."
+                            </p>
+                            <div class="client-info">
+                                <div class="client-avatar"><i class="fa-solid fa-user-nurse"></i></div>
+                                <div>
+                                    <h4 class="client-name">Mary Adhiambo</h4>
+                                    <span class="client-role">Lab Administrator, St. Jude Medical Center</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="glass-card testimonial-card">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="testimonial-text">
+                                "The precision and speed of Blessed Lab's diagnostic testing give our clinicians total confidence in our treatment decisions. Truly the most reliable laboratory partner in the region."
+                            </p>
+                            <div class="client-info">
+                                <div class="client-avatar"><i class="fa-solid fa-microscope"></i></div>
+                                <div>
+                                    <h4 class="client-name">Peter Otieno</h4>
+                                    <span class="client-role">Senior Research Technologist, Academic Research Hub</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="slider-dots" id="slider-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section reveal">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Blessed Laboratory</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Direct Business Information from Card -->
+                <div class="contact-info-wrapper">
+                    <div class="glass-card contact-card">
+                        <div class="contact-brand-header">
+                            <div class="brand-logo-icon">
+                                <i class="fa-solid fa-flask-vial"></i>
+                            </div>
+                            <div>
+                                <h3>Blessed Laboratory Services & Supply</h3>
+                                <p class="director-title"><i class="fa-solid fa-user-shield"></i> <strong>Wanga Caroline</strong> — Laboratory Technologist / Director</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-details-list">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="contact-text">
+                                    <span class="label">Phone Numbers:</span>
+                                    <p><a href="tel:0713074997">0713 074 997</a> | <a href="tel:0710149780">0710 149 780</a> | <a href="tel:0735228229">0735 228 229</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-text">
+                                    <span class="label">Email Address:</span>
+                                    <p><a href="mailto:wangacarol32@gmail.com">wangacarol32@gmail.com</a></p>
+                                </div>
+  </div>
