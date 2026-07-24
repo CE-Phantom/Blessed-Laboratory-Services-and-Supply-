@@ -1048,6 +1048,30 @@ Providing reliable laboratory services, scientific equipment and medical supplie
 
 <script src="script.js"></script>
 
+<!-- Paste this right above the </body> tag -->
+<script>
+    function hideLoader() {
+        const loader = document.getElementById("loader");
+        
+        if (loader) {
+            loader.style.opacity = "0";
+            loader.style.visibility = "hidden";
+            
+            // If your CSS body has overflow: hidden, uncomment the line below:
+            // document.body.style.overflow = "auto"; 
+        }
+    }
+
+    // Listens for standard scrolling
+    window.addEventListener("scroll", hideLoader);
+
+    // Listens for a mouse wheel spin (desktop)
+    window.addEventListener("wheel", hideLoader);
+
+    // Listens for a screen swipe (mobile)
+    window.addEventListener("touchmove", hideLoader);
+</script>
+  
 </body>
 
   </html>
