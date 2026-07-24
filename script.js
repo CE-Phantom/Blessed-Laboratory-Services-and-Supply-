@@ -8,18 +8,16 @@ PART 1
 LOADER
 ==========================*/
 
-window.addEventListener("load", function () {
-
+window.addEventListener("scroll", function () {
     const loader = document.getElementById("loader");
-
-    setTimeout(function () {
-
+    
+    // Check if the loader exists to prevent errors
+    if (loader) {
         loader.style.opacity = "0";
         loader.style.visibility = "hidden";
-
-    }, 1200);
-
+    }
 });
+
 
 
 /*==========================
