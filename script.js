@@ -8,17 +8,27 @@ PART 1
 LOADER
 ==========================*/
 
-window.addEventListener("scroll", function () {
+function hideLoader() {
     const loader = document.getElementById("loader");
     
-    // Check if the loader exists to prevent errors
     if (loader) {
         loader.style.opacity = "0";
         loader.style.visibility = "hidden";
+        
+        // Optional: If you hid the body overflow in CSS to prevent scrolling 
+        // while the loader is active, you can restore it here:
+        // document.body.style.overflow = "auto"; 
     }
-});
+}
 
+// 1. Listens for standard scrolling
+window.addEventListener("scroll", hideLoader);
 
+// 2. Listens for a mouse wheel spin (desktop)
+window.addEventListener("wheel", hideLoader);
+
+// 3. Listens for a screen swipe (mobile)
+window.addEventListener("touchmove", hideLoader);
 
 /*==========================
 NAVBAR SCROLL
