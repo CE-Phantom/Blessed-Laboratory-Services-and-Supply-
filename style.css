@@ -64,9 +64,10 @@ img {
 }
 
 .logo img {
-    height: 40px;      /* Set a fixed height that fits your header */
-    width: auto;       /* Maintains your logo's natural proportions */
-    max-height: 100%;  /* Prevents it from breaking out of the navbar */
+    height: 40px;            /* Forces the logo to fit neatly in the header */
+    width: auto;             /* Keeps the aspect ratio intact */
+    max-width: 180px;        /* Prevents it from spreading out wide */
+    display: block;          /* Keeps it cleanly inline */
     object-fit: contain;
 }
 
