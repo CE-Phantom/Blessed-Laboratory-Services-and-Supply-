@@ -63,6 +63,13 @@ img {
     display: block;
 }
 
+.logo img {
+    height: 40px;      /* Set a fixed height that fits your header */
+    width: auto;       /* Maintains your logo's natural proportions */
+    max-height: 100%;  /* Prevents it from breaking out of the navbar */
+    object-fit: contain;
+}
+
 /* 2. BACKGROUND PARTICLE CANVAS & PARALLAX */
 #particle-canvas {
     position: fixed;
